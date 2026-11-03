@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "主窗口的权限。自定义命令 subscribe 和 relaunch_elevated 不需要额外授权",
+  "windows": ["main"],
+  "permissions": ["core:default"]
+}

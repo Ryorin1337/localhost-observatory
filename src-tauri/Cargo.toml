@@ -1,0 +1,14 @@
+[package]
+name = "localhost-observatory"
+version = "0.1.0"
+edition = "2021"
+description = "Localhost Observatory 桌面应用"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+# 只要采集核心，不要独立服务那一套（axum、tokio）
+observatory = { path = "../backend", default-features = false }
+tauri = { version = "2", features = [] }
+tauri-plugin-single-instance = "2"
